@@ -239,7 +239,7 @@ ifeq ($(strip $(TARGET_PRODUCT)), rk3566_eink)
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep \
     Calendar Contacts DeskClock Lightning Music QuickSearchBox RkExplorer
 else
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep Launcher3Go PhotoTable
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
 endif
 
 LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3
