@@ -235,9 +235,9 @@ LOCAL_PACKAGE_NAME := Launcher3QuickStepGo
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_SYSTEM_EXT_MODULE := true
 
-ifneq ($(filter rk3566_eink rk3566_einkw6, $(strip $(TARGET_PRODUCT))), )
+ifeq ($(strip $(TARGET_PRODUCT)), rk3566_eink)
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep \
-    Calendar Contacts Lightning QuickSearchBox RkExplorer
+    Calendar Contacts DeskClock Lightning Music QuickSearchBox RkExplorer
 else
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep Launcher3Go PhotoTable
 endif
